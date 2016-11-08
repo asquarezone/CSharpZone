@@ -19,14 +19,28 @@ namespace Test_Work
         {
             double dd = 10.25;
             int inn = (int)dd;
+            int[] array = { 10, 20, 30, 40 };
+
+            foreach(int temp in array)
+            {
+                Console.WriteLine(temp);
+            }
+
+            for(int kk=0;kk < array.Length;kk++)
+            {
+                Console.WriteLine(array[kk]);
+            }
+
 
             string s = "Ram";
 
             Console.WriteLine(string.Format("Hai {0}", s));
-            DateTime D=DateTime.Today()
+         //   DateTime D=DateTime.Today()
             
 
-            object o = 25;
+            object o ;
+
+            o = 25;
 
             int k = (int)o;
 
