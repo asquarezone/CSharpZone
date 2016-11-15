@@ -7,6 +7,7 @@ namespace Test_Work
 {
     class Program
     {
+        
         readonly int i;
         const int j=0;
 
@@ -15,11 +16,65 @@ namespace Test_Work
             i = 25;
         }
 
+        enum colors
+        {
+            red =1,
+            green,
+            blue
+        }
+
         static void Main(string[] args)
         {
+            int[] array1 = new int[] { 2, 5, 1, 10, 22, 33, 11 };
+            Console.WriteLine(string.Join(";", array1));
+            Console.WriteLine( array1.Min());
+            String s = "Hai";
+          
+            Console.WriteLine(s.Trim(new char[] { ' ', 'i' }));
+
+            int hai = 10;
+            do
+            {
+                Console.WriteLine(hai);
+                hai--;
+            } while (hai > 0);
+
+
+            colors k2;
+
+            DateTime? d1 = null;
+            int? days = d1?.Second;
+
+            Console.WriteLine("kjklkflsk" + days);
+
+            k2 = colors.green;
+            Console.WriteLine((int)k2);
+
+            switch (k2)
+            {
+                case colors.red : Console.WriteLine("You entered red");
+                                    break;
+                case colors.green:
+                                Console.WriteLine("You entered red");
+                                break;
+            }
+
+
             double dd = 10.25;
             int inn = (int)dd;
             int[] array = { 10, 20, 30, 40 };
+            int kkk = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(kkk);
+            int[,] array2 = new int[2, 3];
+            int? test = 10;
+            int test2 = test ?? -1;
+
+            Console.WriteLine(test2);
+
+            //if(array2[2,0] > 0)
+            //{
+
+            //}
 
             foreach(int temp in array)
             {
@@ -32,7 +87,7 @@ namespace Test_Work
             }
 
 
-            string s = "Ram";
+          //  string s = "Ram";
 
             Console.WriteLine(string.Format("Hai {0}", s));
          //   DateTime D=DateTime.Today()
