@@ -7,6 +7,9 @@ namespace Test_Work
 {
     class Program
     {
+
+        three th = new three();
+       
         
         readonly int i;
         const int j=0;
@@ -25,6 +28,8 @@ namespace Test_Work
 
         static void Main(string[] args)
         {
+            three tttt = new three();
+            tttt.test();
             int[] array1 = new int[] { 2, 5, 1, 10, 22, 33, 11 };
             Console.WriteLine(string.Join(";", array1));
             Console.WriteLine( array1.Min());

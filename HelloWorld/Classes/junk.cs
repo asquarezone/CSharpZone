@@ -6,9 +6,12 @@ using System.Text;
 namespace Classes
 {
 
-    struct MyMath1
+    public struct MyMath1
     {
+        public MyMath1()
+        {
 
+        }
     }
 
     public abstract class aclass
@@ -16,16 +19,40 @@ namespace Classes
         public abstract int addd(int a, int b);
     }
 
-    class MyChildMath:MyMath
+    public abstract class bclass
+    {
+        public abstract int addd(int a, int b);
+    }
+
+    class MyChildMath :aclass
     {
         public MyChildMath():base()
         {
 
         }
+
+        public override int addd(int a, int b)
+        {
+            throw new NotImplementedException();
+        }
+
         public int log()
         {
             return 10;
         }
+    }
+    interface iadd
+    {
+
+    }
+
+    interface isub
+    {
+
+    }
+    public class mytest:isub,iadd
+    {
+
     }
 
     class MyMath

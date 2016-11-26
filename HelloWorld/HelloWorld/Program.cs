@@ -1,4 +1,5 @@
 ﻿using System;
+using ClassLibrary1;
 
 namespace HelloWorld
 {
@@ -6,6 +7,9 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
+            Class1 c1 = new Class1();
+            c1.i = 10;
+            c1.
             // Print hellow World..!!
             Console.WriteLine("Hello World..!!");
 
